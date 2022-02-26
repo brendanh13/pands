@@ -4,5 +4,20 @@
 # grades in a dict, the program should then print out her data.
 # The number of course she has could change.
 
-studentNames = ('Mary')
-studentCourses = ['Programming','History']
+student = {
+    "name" : "Mary",
+    "modules" : [
+        {
+            "courseName" : "Programming",
+            "grade" : 45
+        },
+        {
+            "courseName" : "History",
+            "grade" : 90
+        }
+    ]
+
+}
+print("Student: {}".format(student["name"]))
+for module in student["modules"]:
+    print("\t {} \t {}".format(module["courseName"], module["grade"]))
